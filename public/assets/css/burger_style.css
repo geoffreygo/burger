@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+}
+
+.jumbotron h1 {
+    font-family: 'Lalezar', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+    background-image: url("../img/burger-closeup.png");
+    background-size: cover;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.burgers, .add {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.ib {
+    display: inline-block;
+    margin: 1rem;
+}
+
+#addit {
+    width: 20rem;
+    height: 5rem;
+}

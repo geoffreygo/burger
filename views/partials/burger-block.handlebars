@@ -1,0 +1,14 @@
+<li>
+    <div class="card mt-2 mr-5">
+    <div class="card-body">
+	<h5>{{burger_name}}</h5>
+
+	<button class="btn btn-success change-eaten" data-id="{{id}}" data-neweat="{{eaten}}">
+		{{#if eaten}}Eat up!{{else}}Eat again!{{/if}}
+	</button>
+	<button class="btn btn-danger delete" data-id="{{id}}">
+		Delete
+	</button>
+    </div>
+    </div>
+</li>
