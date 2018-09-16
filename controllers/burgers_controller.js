@@ -32,11 +32,26 @@ router.put("/api/burgers/:id", function(req, res) {
         devoured: req.body.devoured
     }, condition, function(result) {
         if (result.changedRows == 0) {
+            console.log("no changed rows");
             return res.status(404).end();
         } else {
             res.status(200).end();
         }
     });
 });
+
+router.delete("/api/burgers/delete/:id", function(req, res) {
+    var id = req.params.id;
+
+    burger.deleteOne(id, function(result) {
+        if (result.changedRows == 0) {
+            console.log("no changed rows");
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    })
+    console.log(res);
+})
 
 module.exports = router;
