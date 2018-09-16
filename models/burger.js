@@ -16,6 +16,11 @@ var burger = {
             cb(res);
         })
     },
+    deleteOne: function(id, cb) {
+        orm.deleteOne("burgers", id, function(res) {
+            cb(res);
+        })
+    }
 };
 
 module.exports = burger;
